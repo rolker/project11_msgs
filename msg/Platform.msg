@@ -2,3 +2,7 @@
 string      name
 string      robot_description
 NavSource[] nav_sources
+float32     width
+float32     length
+float32     reference_x
+float32     reference_y
