@@ -1,5 +1,6 @@
 # Describes a Project11 platform
 string      name
+string      platform_namespace
 string      robot_description
 NavSource[] nav_sources
 float32     width
