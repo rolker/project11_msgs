@@ -5,6 +5,8 @@ find_package(catkin REQUIRED roscpp std_msgs message_generation geographic_msgs)
 add_message_files(
   FILES
   NavSource.msg
+  PIDDebug.msg
+  PIDParameters.msg
   Platform.msg
   PlatformList.msg
 )
