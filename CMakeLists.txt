@@ -9,6 +9,7 @@ add_message_files(
   PIDParameters.msg
   Platform.msg
   PlatformList.msg
+  RangeBearing.msg
 )
 
 generate_messages(
