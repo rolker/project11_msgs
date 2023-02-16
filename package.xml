@@ -13,5 +13,11 @@
     <build_depend>message_generation</build_depend>
     <exec_depend>message_runtime</exec_depend>
     <depend>geographic_msgs</depend>
+
+    <depend>rosbag_migration_rule</depend>
+    <export>
+        <rosbag_migration_rule rule_file="bmr/from_marine_msgs.bmr"/>
+    </export>
+
     
 </package>
