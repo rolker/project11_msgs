@@ -4,6 +4,20 @@ find_package(catkin REQUIRED roscpp std_msgs message_generation geographic_msgs)
 
 add_message_files(
   FILES
+  Contact.msg
+  CourseMadeGood.msg
+  CourseMadeGoodStamped.msg
+  Detect.msg
+  DifferentialDrive.msg
+  GeoPoseNavEuler.msg
+  GeoPoseNavEulerStamped.msg
+  GeoPoseNavEulerWithCovariance.msg
+  GeoPoseNavEulerWithCovarianceStamped.msg
+  Heartbeat.msg
+  Helm.msg
+  KeyValue.msg
+  NavEuler.msg
+  NavEulerStamped.msg
   NavSource.msg
   PIDDebug.msg
   PIDParameters.msg
