@@ -4,7 +4,7 @@ uint8 CONTACT_SOURCE_UNSPECIFIED = 0
 uint8 CONTACT_SOURCE_AIS         = 1
 uint8 CONTACT_SOURCE_RADAR       = 2
 
-Header header
+std_msgs/Header header
 
 uint8 contact_source
 

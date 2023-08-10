@@ -1,4 +1,4 @@
 # Course in clockwise degrees relative to north.
-Header header
+std_msgs/Header header
 float64 course
 

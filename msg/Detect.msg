@@ -1,6 +1,6 @@
 # Template for a Detect message
 
-Header header
+std_msgs/Header header
 string sensor_id
 project11_msgs/KeyValue[] values
 geometry_msgs/PoseWithCovariance pose

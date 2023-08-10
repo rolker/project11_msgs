@@ -3,5 +3,5 @@
 # Orientation uses the East-North-Up (ENU) frame of reference.
 # Expressed as Euler Angles
 
-Header header
+std_msgs/Header header
 GeoPoseNavEuler pose

@@ -1,4 +1,4 @@
 # Stamped version of NavEuler
 
-Header header
+std_msgs/Header header
 NavEuler orientation

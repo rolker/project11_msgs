@@ -1,35 +1,42 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.8)
+
 project(project11_msgs)
-find_package(catkin REQUIRED roscpp std_msgs message_generation geographic_msgs)
 
-add_message_files(
-  FILES
-  Contact.msg
-  CourseMadeGood.msg
-  CourseMadeGoodStamped.msg
-  Detect.msg
-  DifferentialDrive.msg
-  GeoPoseNavEuler.msg
-  GeoPoseNavEulerStamped.msg
-  GeoPoseNavEulerWithCovariance.msg
-  GeoPoseNavEulerWithCovarianceStamped.msg
-  Heartbeat.msg
-  Helm.msg
-  KeyValue.msg
-  NavEuler.msg
-  NavEulerStamped.msg
-  NavSource.msg
-  PIDDebug.msg
-  PIDParameters.msg
-  Platform.msg
-  PlatformList.msg
-  RangeBearing.msg
-)
+find_package(ament_cmake REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(geographic_msgs REQUIRED)
 
-generate_messages(
-  DEPENDENCIES
-  std_msgs
-  geographic_msgs
-)
+set(MSG_FILES
+  msg/Contact.msg
+  msg/CourseMadeGood.msg
+  msg/CourseMadeGoodStamped.msg
+  msg/Detect.msg
+  msg/DifferentialDrive.msg
+  msg/GeoPoseNavEuler.msg
+  msg/GeoPoseNavEulerStamped.msg
+  msg/GeoPoseNavEulerWithCovariance.msg
+  msg/GeoPoseNavEulerWithCovarianceStamped.msg
+  msg/Heartbeat.msg
+  msg/Helm.msg
+  msg/KeyValue.msg
+  msg/NavEuler.msg
+  msg/NavEulerStamped.msg
+  msg/NavSource.msg
+  # msg/PIDDebug.msg
+  # msg/PIDParameters.msg
+  msg/Platform.msg
+  msg/PlatformList.msg
+  msg/RangeBearing.msg)
 
-catkin_package(CATKIN_DEPENDS message_runtime geographic_msgs)
+rosidl_generate_interfaces(
+    ${PROJECT_NAME}
+    ${MSG_FILES}
+    DEPENDENCIES
+    builtin_interfaces
+    std_msgs
+    geographic_msgs)
+
+ament_export_dependencies(rosidl_default_runtime)
+
+ament_package()
