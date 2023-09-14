@@ -4,6 +4,7 @@ find_package(catkin REQUIRED roscpp std_msgs message_generation geographic_msgs)
 
 add_message_files(
   FILES
+  BehaviorInformation.msg
   Contact.msg
   CourseMadeGood.msg
   CourseMadeGoodStamped.msg
