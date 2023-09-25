@@ -10,9 +10,10 @@
     <license>BSD</license>
     
     <buildtool_depend>catkin</buildtool_depend>
+    <depend>geographic_msgs</depend>
+    <depend>marine_acoustic_msgs</depend>
     <build_depend>message_generation</build_depend>
     <exec_depend>message_runtime</exec_depend>
-    <depend>geographic_msgs</depend>
 
     <depend>rosbag_migration_rule</depend>
     <export>
