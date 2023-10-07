@@ -10,6 +10,8 @@ add_message_files(
   Contact.msg
   CourseMadeGood.msg
   CourseMadeGoodStamped.msg
+  CTD.msg
+  CTDStamped.msg
   Detect.msg
   DifferentialDrive.msg
   GeoPoseNavEuler.msg
