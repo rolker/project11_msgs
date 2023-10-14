@@ -14,4 +14,6 @@ geometry_msgs/Vector3         beam_unit_vec
 float32                       minimum_range
 float32                       maximum_range
 
+float32                       center_of_mass_range
+
 float32[]                     intensitites
