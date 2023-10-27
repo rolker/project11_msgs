@@ -7,6 +7,7 @@ add_message_files(
   AcousticLayer.msg
   AcousticSlice.msg
   BehaviorInformation.msg
+  BehaviorFeedback.msg
   Contact.msg
   CourseMadeGood.msg
   CourseMadeGoodStamped.msg
