@@ -3,7 +3,7 @@
 # typically from a single beam echo sounder, meeting the
 # criteria for inclusion in an AcousticLayer.
 
-Header                        header
+std_msgs/Header                        header
 
 # Pose of the transducer at the time the ping was sent.
 geometry_msgs/Pose            pose

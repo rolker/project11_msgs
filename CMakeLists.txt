@@ -2,10 +2,14 @@ cmake_minimum_required(VERSION 3.8)
 
 project(project11_msgs)
 
+set(CMAKE_CXX_STANDARD 17)
+
 find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
-find_package(std_msgs REQUIRED)
+
 find_package(geographic_msgs REQUIRED)
+find_package(marine_acoustic_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
 
 set(MSG_FILES
   msg/AcousticLayer.msg

@@ -1,4 +1,4 @@
 # CTD message with a timestamp and frame_id
 
-Header header
+std_msgs/Header header
 CTD    ctd
